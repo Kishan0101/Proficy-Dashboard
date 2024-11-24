@@ -1,7 +1,3 @@
-Here’s a detailed and professional **`README.md`** description for your GitHub repository:
-
----
-
 # Proficy-Dashboard
 
 ## Overview
@@ -116,6 +112,4 @@ Contributions are welcome! Please follow these steps:
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
----
 
-Feel free to use this description, and let me know if you'd like further modifications! 🚀
