@@ -1,0 +1,110 @@
+/* Container styling */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Title */
+.dashboard-container h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Button container */
+.dashboard-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.dashboard-buttons button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Table container */
+.dashboard-table-container {
+  overflow-x: auto; /* For responsiveness */
+  margin-top: 20px;
+}
+
+/* Table styling */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table headers */
+.dashboard-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Table rows */
+.dashboard-table td {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Alternate row colors */
+.dashboard-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dashboard-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-buttons button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .dashboard-table th, 
+  .dashboard-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
