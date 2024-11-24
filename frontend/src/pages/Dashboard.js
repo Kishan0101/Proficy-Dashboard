@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   const fetchMachines = (token) => {
     axios
-      .get("http://localhost:5000/api/machines", {
+      .get("https://proficy-dashboard.onrender.com/api/machines", {
         headers: { Authorization: token },
       })
       .then((response) => setMachines(response.data))
@@ -37,7 +37,7 @@ const Dashboard = () => {
       const token = localStorage.getItem("token");
       axios
         .post(
-          "http://localhost:5000/api/machines",
+          "https://proficy-dashboard.onrender.com/api/machines",
           { name, status },
           { headers: { Authorization: token } }
         )
@@ -51,7 +51,7 @@ const Dashboard = () => {
     if (machineId) {
       const token = localStorage.getItem("token");
       axios
-        .delete(`http://localhost:5000/api/machines/${machineId}`, {
+        .delete(`https://proficy-dashboard.onrender.com/api/machines/${machineId}`, {
           headers: { Authorization: token },
         })
         .then(() => fetchMachines(token))
